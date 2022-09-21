@@ -1,3 +1,6 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+<div class="container text-center">
 <h1>Password Generator</h1>
 
 <form action="{% url 'password' %}">
@@ -11,7 +14,7 @@
         <option value="12" selected="selected">12</option>
         <option value="13">13</option>
         <option value="14">14</option>
-    </select>
+    </select> Длинна
 
 <br>
     <input type="checkbox" name="uppercase"> Uppercase
@@ -20,5 +23,8 @@
 <br>
     <input type="checkbox" name="special"> Special
 <br>
-    <input type="submit" value="Generate Password">
+    <input type="submit" value="Generate Password" class="btn btn-primary">
 </form>
+
+<button><a href="{% url 'info' %}">Информация</buttona>
+</div>
